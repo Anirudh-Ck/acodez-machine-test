@@ -1,5 +1,4 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-// import counterReducer from './reducers/counterSlice';
 import userReducer from './reducers/userSlice';
 import storage from "redux-persist/lib/storage"; 
 import persistReducer from "redux-persist/es/persistReducer";

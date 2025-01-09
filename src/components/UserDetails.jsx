@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { MdFilterListAlt } from "react-icons/md";
-import { FaAngleRight } from "react-icons/fa6";
-import { FaAngleLeft } from "react-icons/fa6";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { RiEdit2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -46,10 +44,10 @@ const UserDetails = () => {
 
   console.log("filteredUsers", filteredUsers);
 
-  const pageCount = Math.ceil(filteredUsers.length / itemsPerPage); // 6/5 = 2
+  const pageCount = Math.ceil(filteredUsers.length / itemsPerPage); 
   const displayedUsers = filteredUsers.slice(
     currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage // 0*5 , 1*5 = (0,5)
+    (currentPage + 1) * itemsPerPage 
   );
   const handlePageChange = ({ selected }) => {
     setCurrentPage(selected);
@@ -71,7 +69,7 @@ const UserDetails = () => {
                 value={searchTerm}
                 onChange={(e) => {
                   setSearchTerm(e.target.value);
-                  setCurrentPage(0); // Reset to first page on search
+                  setCurrentPage(0);
                 }}
               />
             </div>

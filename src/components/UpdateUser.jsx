@@ -143,11 +143,11 @@ function UpdateUser() {
             <Select
             options={leagues}
             isMulti
-            value={leagues.filter((option) => formData.leagues.includes(option.value))} // Show selected options
+            value={leagues.filter((option) => formData.leagues.includes(option.value))}
             onChange={(selectedOptions) =>
               setFormData({
                 ...formData,
-                leagues: selectedOptions.map((option) => option.value), // Update formData
+                leagues: selectedOptions.map((option) => option.value),
               })
             }
             placeholder="Select leagues..."
@@ -161,10 +161,10 @@ function UpdateUser() {
             </label>
             <Select
               options={status}
-              value={status.find((option) => option.value === formData.status)} // Match the selected option
+              value={status.find((option) => option.value === formData.status)}
               onChange={
                 (selectedOption) =>
-                  setFormData({ ...formData, status: selectedOption.value }) // Update formData with selected value
+                  setFormData({ ...formData, status: selectedOption.value }) 
               }
               placeholder="Select"
               className="react-select-container outline-none"
@@ -202,7 +202,7 @@ function UpdateUser() {
               options={positions}
               value={positions.find((option)=>option.value === formData.position)}
               onChange={(selectedOption)=>
-                setFormData({...formData, position: selectedOption.value }) // Update formData with selected value
+                setFormData({...formData, position: selectedOption.value }) 
               }
               placeholder="Select"
               className="react-select-container outline-none"

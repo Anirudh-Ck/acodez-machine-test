@@ -9,7 +9,6 @@ function SideBar({ isSidebarVisible, toggleSidebar }) {
   };
 
   return (
-    // <div className="w-full md:w-[14%] bg-white border-r min-h-screen">
     <div
       className={`fixed top-12 left-0 bg-white h-screen w-[70%] lg:w-[14%] border-r z-30 transition-transform duration-300 
     ${
@@ -20,7 +19,6 @@ function SideBar({ isSidebarVisible, toggleSidebar }) {
       <button className="text-gray-500 lg:hidden p-4" onClick={toggleSidebar}>
         Close
       </button>
-      {/* <div className="w-full bg-white h-screen p-2"> */}
       <div className="p-2">
         <div className="p-4">
           <img

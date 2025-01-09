@@ -70,7 +70,6 @@ function AddUser() {
     e.preventDefault();
 
     try {
-      // Calculate age from DOB
       const age = calculateAge(dob);
       const userData = {
         name,
